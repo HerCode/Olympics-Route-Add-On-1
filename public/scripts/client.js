@@ -1,5 +1,4 @@
-var app = angular.module('olympicPicker', []);
-
+//var app = angular.module('olympicPicker', []);
 app.controller('MainController', function($scope, $http) {
 
   $scope.test = "Find. Your. Olympians!";
