@@ -1,1 +1,1 @@
-angular.module('olympicPicker', ['ngRoute']);
+angular.module('index', ['ngRoute']);

@@ -1,25 +1,25 @@
-angular.module('olympicPicker').config(function($routeProvider, $locationProvider){
+angular.module('index').config(function($routeProvider, $locationProvider){
 
 $routeProvider
-  .when('/badminton', {
-    templateUrl: 'views/badminton.html',
-    controller: 'BadController'
+  .when('/archery', {
+    templateUrl: '../routes/archery.html',
+    controller: 'ArcheryController'
   })
-  .when('/womensgymnastics', {
-    templateUrl: 'views/womgym.html',
-    controller: 'GymController'
+  .when('/canoekayak', {
+    templateUrl: '../routes/canoekayak.html',
+    controller: 'CanoekayakController'
   })
-  .when('/tabletennis', {
-    templateUrl: 'views/tabten.html',
-    controller: 'TabTenController'
-  })
-  .when('/taekwondo', {
-    templateUrl: 'views/taekwondo.html',
-    controller: 'TaeKwonDoController'
+  .when('/modpent', {
+    templateUrl: '../routes/modpent.html',
+    controller: 'ModpentController'
   })
   .when('/syncswim', {
-    templateUrl: 'views/syncswim.html',
-    controller: 'SyncSwimController'
+    templateUrl: '../routes/syncswim.html',
+    controller: 'SyncswimController'
+  })
+  .when('/taekwondo', {
+    templateUrl: '../routes/taekwondo.html',
+    controller: 'TaekwondoController'
   });
 
   $locationProvider.html5Mode(true);
